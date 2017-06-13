@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather Service Station</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/animWeather.css">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/mystyle.css"> -->
+
+    <style>
+    hr{
+      margin: 2px;
+      width: 80%;
+    }
+    h1{
+      z-index: 1;
+      margin: 5px;
+    }
+    h3{
+      color: white;
+      margin: 0;
+      width: 80%;
+      font-weight: 100;
+      font-size: 1.5em;
+      margin: 5px;
+      text-transform: uppercase;
+    }
+    #location_input {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    #weather_data_box {
+      height: auto;
+    }
+
+    .original_weather{
+      border: 1px solid green;
+      height: 100px;
+      margin: 15px;
+      color: #000000;
+      background-color: #000000;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="location_input">
+      <label for="">Latitude</label>
+      <input type="text" name="latitute" value="32.734511">
+      <label for="">Longitute</label>
+      <input type="text" name="longitude" value="-97.119436">
+      <input type="button" value="Get Weather Data" id="latlong" class="btn btn-primary">
+    </div>
+    <div id="weather_data_box" class="container">
+      <div class="row">
+        <div class="col-md-6 original_weather">
+          <h1 class="text-left"> Today's Max Weather:  <span id="curW"> </span></h1>
+          <div class="" id="weatherIcon">
+          </div>
+          <hr />
+          <h3 class="text-left" id="weather_type"> </h3>
+        </div>
+        <div class="col-md-5 original_weather">
+          <h1 class="text-left"> Probability of Precipitation:  <span id="curPOP"> </span></h1>
+          <div class="" id="popIcon">
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 original_weather">
+          <h1 class="text-left"> Liquid Precipitation Amount:  <span id="curP"> </span></h1>
+          <div class="" id="presIcon">
+          </div>
+          <hr />
+        </div>
+        <div class="col-md-5 original_weather">
+          <h1 class="text-left"> Humidity:  <span id="curH"> </span></h1>
+          <div class="" id="humidityIcon">
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 original_weather">
+          <h1 class="text-left"> Wind Direction:  <span id="windDir"> </span></h1>
+          <div class="" id="windDirIcon">
+          </div>
+          <hr />
+        </div>
+        <div class="col-md-5 original_weather">
+          <h1 class="text-left"> Wind Speed  <span id="curWS"> </span></h1>
+          <div class="" id="windSpeedIcon">
+          </div>
+          <hr />
+          <h3 class="text-left" id="wind_speed_type"> </h3>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/javascript/xml2json.min.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-3.1.1.min.js"></script>
+  	<script type="text/javascript" src="/javascript/moment.js"></script>
+  	<script type="text/javascript" src="/javascript/queryparams.js"></script>
+  	<script type="text/javascript" src="/javascript/socketio.js"></script>
+  	<script type="text/javascript" src="/javascript/weather.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
