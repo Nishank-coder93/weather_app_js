@@ -4,16 +4,16 @@ The Project is about making SOAP request to National Weather Service Station to 
 
 # TECH USED
 + Web Application
-1. Frontend
-⋅⋅* Basics HTML, CSS , JavaScript
-⋅⋅* XML to Json converter [x2js](https://github.com/abdmob/x2js "XML to JSON convertor")
-⋅⋅* [Bootstrap Framework](http://getbootstrap.com/ "Bootstrap")
-⋅⋅* [JQuery Framework](https://jquery.com/ "JQuery")
-2. Backend
-⋅⋅* [Node JS as Backend Server]( https://nodejs.org/en/ "Node JS")
-⋅⋅* [Express Framework](https://expressjs.com/ "Express JS")
-⋅⋅* [Socket IO](https://socket.io/ "Socket IO")
-⋅⋅* [SOAP Strong](https://www.npmjs.com/package/strong-soap) (npm Library to render SOAP request)
++ Frontend
+  1. Basics HTML, CSS , JavaScript
+  2. XML to Json converter [x2js](https://github.com/abdmob/x2js "XML to JSON convertor")
+  3. [Bootstrap Framework](http://getbootstrap.com/ "Bootstrap")
+  4. [JQuery Framework](https://jquery.com/ "JQuery")
++ Backend
+  1. [Node JS as Backend Server]( https://nodejs.org/en/ "Node JS")
+  2. [Express Framework](https://expressjs.com/ "Express JS")
+  3. [Socket IO](https://socket.io/ "Socket IO")
+  4. [SOAP Strong](https://www.npmjs.com/package/strong-soap) (npm Library to render SOAP request)
 
 # USAGE
 ### System Installation
